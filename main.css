@@ -1,7 +1,9 @@
 .texto {
-    background-color: antiquewhite;
-    text-align: center;
+    background-color: pink;
+    border-radius: 5px;
     font-size: 20px;
+    margin: auto auto;
+    padding: 8px;
 }
 button {
     font-weight: bold;
