@@ -3,13 +3,13 @@
     border-radius: 5px;
     font-size: 20px;
     margin: auto auto;
-    padding: 8px;
+    padding: 1px 1px;
 }
-button {
+#area {
     font-weight: bold;
     font-size: 20px;
     border-radius: 7px;
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     color: black;
     cursor: pointer;
     margin: 30px 20px;
@@ -23,3 +23,86 @@ a:link {
     text-decoration: none;
 }
 
+.logo {
+    height: 100px;
+    width: 100px;
+    padding: auto auto;
+    border-radius: 5px;
+}
+input {
+    border-radius: 5px;
+    margin: 25px 50px;
+    padding: 5px 30px;
+    font-size: 20px;
+}
+.cabecalho {
+    display: flex;
+    margin: 5px;
+    padding: auto;
+    width: 80%;
+    height: 80%;
+    font-size: 80px;
+}
+#destaque {
+    text-align: center;
+}
+button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(253, 133, 179);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button .fa-search {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container {
+    width: auto;
+    height: 200px;
+    overflow-x: scroll; /* Permitindo rolagem horizontal */
+    white-space: nowrap;
+    border: 0px solid #000;
+    scrollbar-width: none; /* Firefox */
+    border-radius: 7px;
+    
+}
+
+#container::-webkit-scrollbar {
+    display: none; /* Webkit (Chrome, Safari) */
+}
+
+.item {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    background-color: #4CAF50;
+    margin-right: 5px;
+}
