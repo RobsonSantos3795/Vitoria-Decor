@@ -63,21 +63,21 @@ button .fa-search {
 }
 
 #container {
-    width: auto;
+    width: 100%;
     height: 200px;
     overflow-x: scroll; /* Permitindo rolagem horizontal */
     white-space: nowrap;
     border: 0px solid #000;
     scrollbar-width: none; /* Firefox */
-    border-radius: 7px;   
+    border-radius: 5px;   
 }
 #container::-webkit-scrollbar {
     display: none; /* Webkit (Chrome, Safari) */
 }
 .item {
     display: inline-block;
-    width: 180px;
-    height: 180px;
+    width: 20%;
+    height: 80%;
     background-color: #4CAF50;
     margin-right: 5px;
 }
