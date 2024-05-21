@@ -22,7 +22,6 @@
 a:link {
     text-decoration: none;
 }
-
 .logo {
     height: 100px;
     width: 100px;
@@ -31,9 +30,10 @@ a:link {
 }
 input {
     border-radius: 5px;
-    margin: 25px 50px;
+    margin: 25px 20px;
     padding: 5px 30px;
     font-size: 20px;
+    display: inline-flex;
 }
 .cabecalho {
     display: flex;
@@ -62,28 +62,6 @@ button .fa-search {
     margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #container {
     width: auto;
     height: 200px;
@@ -91,18 +69,31 @@ button .fa-search {
     white-space: nowrap;
     border: 0px solid #000;
     scrollbar-width: none; /* Firefox */
-    border-radius: 7px;
-    
+    border-radius: 7px;   
 }
-
 #container::-webkit-scrollbar {
     display: none; /* Webkit (Chrome, Safari) */
 }
-
 .item {
     display: inline-block;
     width: 180px;
     height: 180px;
     background-color: #4CAF50;
     margin-right: 5px;
+}
+h3 {
+    background-color:rgb(253, 133, 179);
+    color: aliceblue;
+    padding: 1%;
+    margin: 10px;
+    height: 50px;
+    width: 125px;
+    line-height: auto;
+    text-align: center;
+    display: inline-table;
+    border-radius: 5px;
+    border: #000 1px solid;   
+}
+h2 {
+    color: #4CAF50;
 }
