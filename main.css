@@ -61,7 +61,8 @@ button {
 }
 
 button .fa-search {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    display: flex;
 }
 
 #container {
