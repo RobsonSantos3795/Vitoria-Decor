@@ -30,8 +30,8 @@ a:link {
 }
 input {
     border-radius: 5px;
-    margin: 25px 20px;
-    padding: 5px 30px;
+    margin: 25px 10px;
+    padding: 2px 15px;
     font-size: 20px;
     display: inline-flex;
 }
@@ -41,7 +41,7 @@ input {
     padding: auto;
     width: 80%;
     height: 50%;
-    font-size: 50px;
+    font-size: 25px;
 }
 #destaque {
     text-align: center;
