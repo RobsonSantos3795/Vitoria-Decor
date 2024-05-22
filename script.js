@@ -1,3 +1,4 @@
+//Essa sessão contém a parte de interação do botão
 var a = document.getElementById('area');
 
 a.addEventListener('mouseenter', entrar);
@@ -11,6 +12,7 @@ function sair() {
     a.style.background = 'yellow';
 }
 
+//A sessão abaixo contém a parte de interação do menu do site
 var menuButton = document.getElementById("menu-button");
 var menu = document.getElementById("menu");
 
@@ -22,31 +24,7 @@ menuButton.addEventListener("click", function() {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Sessão abaixo contem a construção do rolamento de imagem
 window.onload = function() {
   var container = document.getElementById('container');
   var scrollAmount = 1; // Quantidade de pixels para rolar
