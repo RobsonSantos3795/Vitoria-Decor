@@ -16,17 +16,14 @@
     padding: 8% auto;
     display: flex;
 }
-#menu {
-    display: none;
-    font: arial;
-    color: #000;
-    text-decoration-color: #000;
-}
-a:link {
-    text-decoration: none;
-}
-a:hover {
-    color: #000;
+/*  ###  CABEÇALHO  ###  */
+.cabecalho {
+    display: flex;
+    margin: 5px;
+    padding: auto;
+    width: 40%;
+    height: 50%;
+    font-size: 25px;
 }
 .logo {
     height: 100px;
@@ -34,6 +31,7 @@ a:hover {
     padding: auto auto;
     border-radius: 5px;
 }
+/*  ###  PARTE DE INSERIR PESQUISA  ###  */
 input {
     border-radius: 5px;
     margin: 25px 10px;
@@ -43,17 +41,13 @@ input {
     height: auto;
     width: 160px;
 }
-.cabecalho {
-    display: flex;
-    margin: 5px;
-    padding: auto;
-    width: 40%;
-    height: 50%;
-    font-size: 25px;
-}
-#destaque {
-    text-align: center;
-}
+/*  ###  MENU  ###  */
+#menu {
+    display: none; /* Menu oculto por padrão */
+  }
+  .visible {
+    display: block; /* Classe para mostrar o menu */
+  }
 button {
     display: flex;
     align-items: center;
@@ -65,35 +59,10 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
-
 button .fa-search {
     margin-right: 5px; /* Espaço entre o ícone e o texto */
     display: flex;
 }
-/*
-#container {
-    width: 100%;
-    height: 100%;
-    overflow-x: scroll;*/ /* Permitindo rolagem horizontal */
-    /*
-    white-space: nowrap;
-    border: 0px solid #000;
-    scrollbar-width: none;*/ /* Firefox */
-    /*
-    border-radius: 5px;   
-}
-#container::-webkit-scrollbar {
-    display: none; /* Webkit (Chrome, Safari) */
-    /*
-}
-.item {
-    display: inline-block;
-    width: 10%;
-    height: 60%;
-    background-color: #4CAF50;
-    margin-right: 3px; 
-    
-} */
 
 h3 { /* Tamanho dos botões para acesso aos kits! */
     background-color:rgb(253, 133, 179);
@@ -110,32 +79,11 @@ h3 { /* Tamanho dos botões para acesso aos kits! */
     font-weight: bold; 
     
 }
-h2 {
-    color: #000000;
-}
-#sobre {
-    text-align: center;
-}
-h4 {
-    margin: 5px;
-    font: arial;
-    
-}
-p {
-    margin: 5px;
-    font: arial;
 
-}
-footer {
-    background-color: pink;
-    padding: 30px;
-    border-radius: 5px;
-    border: black 3px solid;
-}
-
+/* ###  ROLAGEM  ### */
 #container {
     width: 100%;
-    height: 100%;
+    height: 300px;
     overflow-x: auto; /* Permitindo rolagem horizontal */
     white-space: nowrap; /* Evitando que os itens quebrem linha */
     border: 0px solid #000;
@@ -149,8 +97,33 @@ footer {
 
 .item {
     display: inline-block;
-    width: 10%;
-    height: 60%;
+    width: 250px;
+    height: 250px;
     background-color: #4CAF50;
     margin-right: 3px;
+}
+/*  ###  TÍTULO ABAIXO DA ROLAGEM  ###  */
+#destaque {
+    text-align: center;
+}
+/* ###  RODA PÉ  ### */
+h2 {
+    color: #000000;
+}
+#sobre {
+    text-align: center;
+}
+h4 {
+    margin: 5px;
+    font: arial;    
+}
+p {
+    margin: 5px;
+    font: arial;
+}
+footer {
+    background-color: pink;
+    padding: 50px;
+    border-radius: 5px;
+    border: black 3px solid;
 }
