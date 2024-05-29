@@ -91,13 +91,13 @@ button .fa-search {
     background-color: #4CAF50;
     margin-right: 5px;
 }
-h3 {
+h3 { /* Tamanho dos botões para acesso aos kits! */
     background-color:rgb(253, 133, 179);
     color: aliceblue;
     padding: 1%;
     margin: 10px;
     height: 50px;
-    width: 100px;
+    width: 60px;
     line-height: auto;
     text-align: center;
     display: inline-table;
