@@ -18,9 +18,16 @@
 }
 #menu {
     display: none;
+    font: arial;
+    color: #000;
+    text-decoration-color: #000;
 }
 a:link {
     text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
 }
 .logo {
     height: 100px;
