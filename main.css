@@ -26,7 +26,6 @@ a:link {
     text-decoration: none;
 }
 a:hover {
-    text-decoration: none;
     color: #000;
 }
 .logo {
@@ -71,26 +70,31 @@ button .fa-search {
     margin-right: 5px; /* Espaço entre o ícone e o texto */
     display: flex;
 }
-
+/*
 #container {
     width: 100%;
-    height: 200px;
-    overflow-x: scroll; /* Permitindo rolagem horizontal */
+    height: 100%;
+    overflow-x: scroll;*/ /* Permitindo rolagem horizontal */
+    /*
     white-space: nowrap;
     border: 0px solid #000;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;*/ /* Firefox */
+    /*
     border-radius: 5px;   
 }
 #container::-webkit-scrollbar {
     display: none; /* Webkit (Chrome, Safari) */
+    /*
 }
 .item {
     display: inline-block;
-    width: 20%;
-    height: 80%;
+    width: 10%;
+    height: 60%;
     background-color: #4CAF50;
-    margin-right: 5px;
-}
+    margin-right: 3px; 
+    
+} */
+
 h3 { /* Tamanho dos botões para acesso aos kits! */
     background-color:rgb(253, 133, 179);
     color: aliceblue;
@@ -127,4 +131,26 @@ footer {
     padding: 30px;
     border-radius: 5px;
     border: black 3px solid;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; /* Permitindo rolagem horizontal */
+    white-space: nowrap; /* Evitando que os itens quebrem linha */
+    border: 0px solid #000;
+    scrollbar-width: none; /* Ocultando a barra de rolagem no Firefox */
+    border-radius: 5px;
+}
+
+#container::-webkit-scrollbar {
+    display: none; /* Ocultando a barra de rolagem no Webkit (Chrome, Safari) */
+}
+
+.item {
+    display: inline-block;
+    width: 10%;
+    height: 60%;
+    background-color: #4CAF50;
+    margin-right: 3px;
 }
