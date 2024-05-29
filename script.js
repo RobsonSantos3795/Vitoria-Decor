@@ -17,6 +17,7 @@ var menuButton = document.getElementById("menu-button");
 var menu = document.getElementById("menu");
 
 menuButton.addEventListener("click", function() {
+  menu.classList.toggle("visible");
   if (menu.style.display === "block") {
     menu.style.display = "none";
   } else {
@@ -41,7 +42,7 @@ window.onload = function() {
 
   var scrollInterval = setInterval(scrollHorizontally, delay);
 }
-
+/*  ###  LINKS DE SITES  ###  */
 function infantil() {
   location.href = "index1.html";
 }
