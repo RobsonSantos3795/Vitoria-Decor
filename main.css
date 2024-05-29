@@ -109,3 +109,22 @@ h3 { /* Tamanho dos botões para acesso aos kits! */
 h2 {
     color: #000000;
 }
+#sobre {
+    text-align: center;
+}
+h4 {
+    margin: 5px;
+    font: arial;
+    
+}
+p {
+    margin: 5px;
+    font: arial;
+
+}
+footer {
+    background-color: pink;
+    padding: 30px;
+    border-radius: 5px;
+    border: black 3px solid;
+}
