@@ -41,3 +41,10 @@ window.onload = function() {
 
   var scrollInterval = setInterval(scrollHorizontally, delay);
 }
+
+function infantil() {
+  location.href = "index2.html";
+}
+function cha() {
+  location.href = "index3.html";
+}
