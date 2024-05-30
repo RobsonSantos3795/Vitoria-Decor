@@ -4,7 +4,7 @@
     font-size: 20px;
     margin: auto auto;
     padding: 1px 1px;
-}
+}/*
 #area {
     font-weight: bold;
     font-size: 20px;
@@ -15,7 +15,7 @@
     margin: 30px 20px;
     padding: 8% auto;
     display: flex;
-}
+}*/
 /*  ###  CABEÇALHO  ###  */
 .cabecalho {
     display: flex;
@@ -44,9 +44,6 @@ input {
 /*  ###  MENU  ###  */
 #menu {
     display: none; /* Menu oculto por padrão */
-  }
-  .visible {
-    display: block; /* Classe para mostrar o menu */
   }
 button {
     display: flex;
