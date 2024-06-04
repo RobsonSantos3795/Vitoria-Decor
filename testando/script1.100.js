@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     const menuItems = document.querySelectorAll('#menu li a');
 
     menuItems.forEach(item => {
@@ -8,4 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
             // Aqui você pode adicionar mais lógica, como navegação suave, etc.
         });
     });
+});
+*/
+
+var menuButton = document.getElementById("menu-button");
+var menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", function() {
+  menu.classList.toggle("visible");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
 });

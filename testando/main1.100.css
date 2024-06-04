@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
 }
 
@@ -26,4 +26,32 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #575757;
+}*/
+
+#menu {
+    display: none; /* Menu oculto por padrão */
+  }
+button {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(253, 133, 179);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.texto {
+    background-color: pink;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: auto auto;
+    padding: 1px 1px;
+}
+footer {
+    background-color: pink;
+    padding: 50px;
+    border-radius: 5px;
+    border: black 3px solid;
 }
