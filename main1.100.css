@@ -78,6 +78,12 @@ button .fa-search {
     margin: auto auto;
     padding: 1px 1px;
 }
+/*  ###  MUITA ATENÇÃO NA REMOÇÃO DO LNK  ###  */
+a:link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
 footer {
     background-color: pink;
     padding: 50px;
