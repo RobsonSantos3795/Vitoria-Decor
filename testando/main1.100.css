@@ -84,6 +84,9 @@ footer {
     border-radius: 5px;
     border: black 3px solid;
 }
+.sobre {
+    text-align: center;
+}
 /* ###  ROLAGEM  ### */
 #container {
     width: 100%;
@@ -105,4 +108,17 @@ footer {
     height: 250px;
     background-color: #4CAF50;
     margin-right: 3px;
+}
+.destaque {
+    text-align: center;
+}
+/* ###  LINKS  ###  */
+h3 {
+    display: inline-table;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+.links {
+    text-align: center;
 }

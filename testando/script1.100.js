@@ -40,3 +40,22 @@ window.onload = function() {
 
   var scrollInterval = setInterval(scrollHorizontally, delay);
 }
+/*  ###  LINKS DE SITES  ###  */
+function infantil() {
+  location.href = "index1.html";
+}
+function cha() {
+  location.href = "index2.html";
+}
+function adulto() {
+  location.href = "index3.html";
+}
+function formatura() {
+  location.href = "index4.html";
+}
+function noivado() {
+  location.href = "index5.html";
+}
+function arcos() {
+  location.href = "index6.html";
+}
