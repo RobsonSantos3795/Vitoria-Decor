@@ -78,44 +78,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let selectedLink = '';
 
-  // Função para filtrar e mostrar resultados
-  function searchNames(query) {
-      searchResults.innerHTML = ''; // Limpar resultados anteriores
-      if (query) {
-          const filteredLinks = namedLinks.filter(linkObj => linkObj.name.toLowerCase().includes(query.toLowerCase()));
-          filteredLinks.forEach(linkObj => {
-              const div = document.createElement('div');
-              div.className = 'resultItem';
-              
-              const link = document.createElement('a');
-              link.href = linkObj.link;
-              link.textContent = linkObj.name;
-              link.addEventListener('click', function() {
-                  selectedLink = linkObj;
-                  searchInput.value = linkObj.name;
-                  searchResults.innerHTML = '';
-              });
-              
-              div.appendChild(link);
-              searchResults.appendChild(div);
-          });
-      }
-  }
-
-  // Evento para capturar a entrada do usuário
-  searchInput.addEventListener('input', function() {
-      const query = searchInput.value;
-      searchNames(query);
-  });
-
-  // Evento para o botão confirmar
-  confirmButton.addEventListener('click', function() {
-      if (selectedLink) {
-          alert(`Você confirmou o link: ${selectedLink.name} - ${selectedLink.link}`);
+// Função para filtrar e mostrar resultados
+function searchNames(query) {
+  searchResults.innerHTML = ''; // Limpar resultados anteriores
+  if (query) {
+      const filteredLinks = namedLinks.filter(linkObj => linkObj.name.toLowerCase().includes(query.toLowerCase()));
+      filteredLinks.forEach(linkObj => {
+          const div = document.createElement('div');
+          div.className = 'resultItem';
           
-      } else {
-          alert('Selecione um link.');
-          //location.href = "index5.html"
-      }
-  });
+          const link = document.createElement('a');
+          link.href = linkObj.link;
+          link.textContent = linkObj.name;
+          link.addEventListener('click', function(event) {
+              event.preventDefault(); // Prevenir redirecionamento ao clicar
+              selectedLink = linkObj;
+              searchInput.value = linkObj.name;
+              searchResults.innerHTML = '';
+          });
+          
+          div.appendChild(link);
+          searchResults.appendChild(div);
+      });
+  }
+}
+
+// Evento para capturar a entrada do usuário
+searchInput.addEventListener('input', function() {
+  const query = searchInput.value;
+  searchNames(query);
+});
+
+// Evento para o botão confirmar
+confirmButton.addEventListener('click', function() {
+  const query = searchInput.value.toLowerCase();
+  const matchedLink = namedLinks.find(linkObj => linkObj.name.toLowerCase() === query);
+  
+  if (matchedLink) {
+      window.location.href = matchedLink.link; // Redirecionar para o link correspondente
+  } else {
+      alert('Nenhum link correspondente foi encontrado.');
+  }
+});
 });
