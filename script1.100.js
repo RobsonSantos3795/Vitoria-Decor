@@ -59,3 +59,63 @@ function noivado() {
 function arcos() {
   location.href = "index6.html";
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('searchInput');
+  const searchResults = document.getElementById('searchResults');
+  const confirmButton = document.getElementById('confirmButton');
+
+  // Lista de nomes com links associados
+  const namedLinks = [
+      { name: 'Kit infantil', link: 'index1.html' },
+      { name: 'Kit chá revelação', link: 'index2.html' },
+      { name: 'Kit adulto', link: 'index3.html' },
+      { name: 'Kit formatura', link: 'index4.html' },
+      { name: 'Kit noivado/casamento', link: 'index5.html' },
+      { name: 'Arco de balões delivery', link: 'index6.html' }
+  ];
+
+  let selectedLink = '';
+
+  // Função para filtrar e mostrar resultados
+  function searchNames(query) {
+      searchResults.innerHTML = ''; // Limpar resultados anteriores
+      if (query) {
+          const filteredLinks = namedLinks.filter(linkObj => linkObj.name.toLowerCase().includes(query.toLowerCase()));
+          filteredLinks.forEach(linkObj => {
+              const div = document.createElement('div');
+              div.className = 'resultItem';
+              
+              const link = document.createElement('a');
+              link.href = linkObj.link;
+              link.textContent = linkObj.name;
+              link.addEventListener('click', function() {
+                  selectedLink = linkObj;
+                  searchInput.value = linkObj.name;
+                  searchResults.innerHTML = '';
+              });
+              
+              div.appendChild(link);
+              searchResults.appendChild(div);
+          });
+      }
+  }
+
+  // Evento para capturar a entrada do usuário
+  searchInput.addEventListener('input', function() {
+      const query = searchInput.value;
+      searchNames(query);
+  });
+
+  // Evento para o botão confirmar
+  confirmButton.addEventListener('click', function() {
+      if (selectedLink) {
+          alert(`Você confirmou o link: ${selectedLink.name} - ${selectedLink.link}`);
+          
+      } else {
+          alert('Selecione um link.');
+          //location.href = "index5.html"
+      }
+  });
+});

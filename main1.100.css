@@ -128,3 +128,25 @@ h3 {
 .links {
     text-align: center;
 }
+
+/*  ###  BARRA DE PESQUISA  ###  */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#searchResults {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+}
+.resultItem {
+    padding: 8px;
+}
+.resultItem a {
+    text-decoration: none;
+    color: blue;
+}
+.resultItem a:hover {
+    text-decoration: underline;
+}
