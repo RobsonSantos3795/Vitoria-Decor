@@ -1,0 +1,27 @@
+img {
+    width: 160px;
+    height: 160px;
+    display: flex;
+}
+.est {
+    display: inline-block;
+    margin: 3px;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-weight: bold;
+}
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+}
+h1 {
+    text-align: center;
+}
+body {
+    margin: 30px;
+}
